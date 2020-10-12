@@ -6,8 +6,8 @@ index = {"Lambda": "lambdasdk.ipynb"}
 
 modules = ["lambdasdk.py"]
 
-doc_url = "https://nic.github.io/lambdasdk/"
+doc_url = "https://thanakijwanavit.github.io/lambdasdk//lambdasdk/"
 
-git_url = "https://github.com/nic/lambdasdk/tree/master/"
+git_url = "https://github.com/thanakijwanavit/lambdasdk"
 
 def custom_doc_links(name): return None

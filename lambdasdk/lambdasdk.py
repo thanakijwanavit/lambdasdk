@@ -23,4 +23,6 @@ class Lambda:
       ClientContext= base64.b64encode(json.dumps({'caller': 'sdk'}).encode()).decode(),
       Payload= json.dumps(input)
     )
+    if invocationType == 'Event':
+      return True
     return json.loads(response['Payload'].read())
