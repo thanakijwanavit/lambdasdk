@@ -8,12 +8,13 @@ class Lambda:
   '''
     for invoking lambda functions
   '''
-  def __init__(self, user=None, pw=None, region = 'ap-southeast-1'):
+  def __init__(self, user=None, pw=None, sessionToken=None, region = 'ap-southeast-1'):
     self.lambdaClient = boto3.client(
         'lambda',
         aws_access_key_id=user,
         aws_secret_access_key=pw,
-        region_name = region
+        region_name = region,
+        aws_session_token=sessionToken
       )
   def invoke(self, functionName, input, invocationType= 'RequestResponse'):
     response = self.lambdaClient.invoke(

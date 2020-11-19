@@ -23,6 +23,7 @@ pw = aws_secret_access_key
 ```
 user = None
 pw = None
+sessionToken = None
 ```
 
 ```python
@@ -31,8 +32,9 @@ from lambdasdk.lambdasdk import Lambda
 
 ```python
 lambda_ = Lambda(
-    user = USER,
-    pw = PW,
+    user = None,
+    pw = None,
+    sessionToken = None,
     region = 'ap-southeast-1'
 )
 ```

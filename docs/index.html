@@ -63,7 +63,8 @@ nb_path: "index.ipynb"
 pw = aws_secret_access_key</code></pre>
 <h5 id="if-run-on-aws">if run on aws<a class="anchor-link" href="#if-run-on-aws"> </a></h5>
 <pre><code>user = None
-pw = None</code></pre>
+pw = None
+sessionToken = None</code></pre>
 
 </div>
 </div>
@@ -93,8 +94,9 @@ pw = None</code></pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lambda_</span> <span class="o">=</span> <span class="n">Lambda</span><span class="p">(</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="n">USER</span><span class="p">,</span>
-    <span class="n">pw</span> <span class="o">=</span> <span class="n">PW</span><span class="p">,</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">pw</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">sessionToken</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">region</span> <span class="o">=</span> <span class="s1">&#39;ap-southeast-1&#39;</span>
 <span class="p">)</span>
 </pre></div>
