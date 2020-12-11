@@ -2,7 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"Lambda": "lambdasdk.ipynb"}
+index = {"InvocationType": "lambdasdk.ipynb",
+         "Lambda": "lambdasdk.ipynb"}
 
 modules = ["lambdasdk.py"]
 

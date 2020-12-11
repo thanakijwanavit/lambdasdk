@@ -26,11 +26,11 @@ pw = None
 sessionToken = None
 ```
 
-```python
+```
 from lambdasdk.lambdasdk import Lambda
 ```
 
-```python
+```
 lambda_ = Lambda(
     user = None,
     pw = None,
@@ -39,7 +39,7 @@ lambda_ = Lambda(
 )
 ```
 
-```python
+```
 lambda_.invoke(
     functionName= 'lambda-pip' ,
     input = {'test':'test'}, 
